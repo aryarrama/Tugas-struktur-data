@@ -16,7 +16,7 @@ int main() {
     
     cout<<"Hasil:"<<endl;
     cout<<"A = "<< A <<endl;
-    cout<<"B = "<< B << endl;
+    cout<<"B = "<< B <<endl;
     
     return 0;
 }
