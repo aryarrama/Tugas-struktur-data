@@ -1,0 +1,16 @@
+Tulis algoritma yang lengkap untuk mengambil isi Stack1 satu persatu dan mencetaknya ke layar, sampai stack1 isinya kosong
+
+=== Jawaban ===
+=> - HEAD:
+      Menampilkan semua isi stack1 satu persatu hingga kosong
+   - DEKLARASI:
+      DATA : array [1..N] of integer
+      TOP1 : integer {input/output}
+      X    : integer {proses}
+   - DESKRIPSI:
+      while (TOP1 > 0) do
+      X <-- DATA[TOP1]
+       write(X)
+     TOP1 <-- TOP1 - 1
+     endwhile 
+      write("Stack1 sekarang kosong")
