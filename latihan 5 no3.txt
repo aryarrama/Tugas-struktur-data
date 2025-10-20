@@ -1,0 +1,16 @@
+Sebutkan ciri double stack dari kondisi:
+a. Penuh. Baik Stack1 maupun Stack2 tak bisa diisi lagi
+b. Baik Stack1 maupun Stack2 bisa diisi lagi
+c. Baik Stack1 maupun Stack2 tak ada isinya
+
+=== Jawaban ===
+a. - Kondisi: Penuh. Baik Stack1 maupun Stack2 tak bisa diisi lagi
+   - Ciri: Top2 - Top1 = 1
+
+b. - Kondisi: Baik Stack1 maupun Stack2 bisa diisi lagi
+   - Ciri: Top2 - Top1 > 1
+
+c. - Kondisi: Baik Stack1 maupun Stack2 tak ada isinya
+   - Ciri: Top1 = -1 (stack1) dan Top2 = n (stack2)
+
+
