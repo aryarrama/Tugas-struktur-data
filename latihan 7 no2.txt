@@ -1,0 +1,47 @@
+=== Soal ===
+Tulis algoritma lengkap untuk:
+a. Insert sebuah record
+b. Delete sebuah record
+
+=== Jawab ===
+a. Insert sebuah record
+HEAD: 
+ Enqueue
+DEKLARASI: 
+ Queue: array [0..n-1] of record
+ F, R, n, COUNTER: integer
+ Data: record
+DESKRIPSI:
+ if (COUNTER = n) then
+    write("Antrian penuh")
+ else
+    read(Data)
+    if (COUNTER = 0) then
+        F <-- 0
+        R <-- 0
+    else
+        R <-- (R + 1) mod n
+    endif
+    Queue[R] <-- Data
+    COUNTER <-- COUNTER + 1
+ endif
+ 
+b. Delete sebuah record
+HEAD: 
+ Dequeue
+DEKLARASI:
+ Queue: array [0..n-1] of record
+ F, R, n, COUNTER: integer
+ Data: record
+DESKRIPSI:
+ if (COUNTER = 0) then
+    write("Antrian kosong")
+ else
+    Data <-- Queue[F]
+    F <-- (F + 1) mod n
+    COUNTER <-- COUNTER - 1
+    if (COUNTER = 0) then
+        F <-- 0
+        R <-- 0
+    endif
+ endif

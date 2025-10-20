@@ -1,0 +1,16 @@
+=== Soal ===
+Tulis algoritma lengkap untuk mendelete isi antrian dari kanan record per record sampai antrian kosong
+
+=== Jawaban ===
+HEAD:
+ mendelete isi antrian dari kanan record per record sampai antrian kosong
+DEKLARASI:
+ Q : array[1..n]
+ R, L : integer
+ x : record
+DESKRIPSI:
+ selama (R >= L) lakukan
+    x <-- Q[R]
+    R <-- R - 1
+ selesai
+ write("Antrian sudah kosong.")

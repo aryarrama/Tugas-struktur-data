@@ -1,0 +1,28 @@
+=== Soal ===
+Sebutkan ciri dari Linier Queue untuk kondisi:
+a. Kosong taka da isinya
+b. Penuh, tak bisa diisi
+c. Bisa diisi
+d. Ada isinya
+e. Antrian tak bisa diisi lagi, tapi belum ada isi antrian yang sudah keluar atau sudah dilayani
+f. Antrian perlu direset
+
+=== Jawaban ===
+a. Kondisi: Kosong
+   Ciri: F = R + 1 dimana saja
+   
+b. Kondisi: Penuh tak bisa diisi
+   Ciri: R = n – 1 
+   
+c. Kondisi: Bisa diisi
+   Ciri: R < n – 1 
+   
+d. Kondisi: Ada isinya
+   Ciri: F < R + 1 
+   
+e. Kondisi: Tak bisa diisi lagi tapi belum ada yang keluar
+   Ciri: R = n – 1 dan F = 0
+   
+f. Kondisi: Perlu direset
+   Ciri: F = R + 1 dan R = n – 1
+

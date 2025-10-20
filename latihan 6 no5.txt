@@ -1,0 +1,8 @@
+=== Soal ===
+Jika n = 100, maka untuk:
+a. Bila F = 15, dan R = 37, maka jumlah pengantri yang belum dilayani =....
+b. Bila F = 15, dan R = 37, maka jumlah kolom yang masih bisa diisi =....
+
+=== Jawaban ===
+a. Jumlah pengantri yang belum dilayani = R - F + 1 = 37 - 15 + 1 = 23
+b. Jumlah kolom yang masih bisa diisi = n - R = 100 - 37 = 63

@@ -1,0 +1,38 @@
+=== Jawaban ===
+a. Menghitung dan mencetak jumlah simpul
+  Q <-- FIRST
+   count <-- 0
+   while (Q != NULL) do
+    count <-- count + 1
+    Q <-- Q->LINK
+ endwhile
+ print(count)
+ 
+b. Menghitung dan mencetak Total INFO
+  Q <-- FIRST
+   total <-- 0
+   while (Q != NULL) do
+    total <-- total + Q->INFO
+    Q <-- Q->LINK
+ endwhile
+ print(total)
+ 
+ c. Mencetak semua nilai INFO
+  Q <-- FIRST
+    while (Q != NULL) do
+    print(Q->INFO)
+    Q <-- Q->LINK
+ endwhile
+ 
+d. Mencetak jumlah simpul dengan nilai INFO = 50
+ Q <-- FIRST
+ count <-- 0
+ while (Q != NULL) do
+    if (Q->INFO == 50) then
+        count <-- count + 1
+     endif
+    Q <-- Q->LINK
+ endwhile
+ print(count)
+
+

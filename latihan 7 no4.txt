@@ -1,0 +1,29 @@
+=== Soal ===
+Tulis algoritma yang lengkap untuk mendelete isi antrian record per record sebanyak 10 record selama antrian masih ada isinya. Apabila antrian sudah kosong, walaupun belum mendelete sebanyak 10 record, maka proses delete dihentikan.
+
+=== Jawaban ===
+HEAD:
+Menghapus isi antrian satu per satu sebanyak 10 record selama antrian masih ada isinya. Apabila antrian sudah kosong, walaupun belum mendelete sebanyak 10 record, proses delete dihentikan
+DEKLARASI:
+ Queue: array [0..n-1] of record
+ F, R, n, COUNTER, i: integer
+ Data: record
+DESKRIPSI:
+ i <-- 1
+ while (i <= 10) do
+    if (COUNTER > 0) then
+        Data <-- Queue[F]
+        F <-- (F + 1) mod n
+        COUNTER <-- COUNTER - 1
+
+        if (COUNTER = 0) then
+            F <-- 0
+            R <-- 0
+        endif
+
+        i <-- i + 1
+    else
+        write("Antrian kosong, proses delete dihentikan")
+        i <-- 11
+    endif
+ endwhile

@@ -1,0 +1,27 @@
+=== Soal ===
+Sebutkan ciri circular Queue dalam kondisi:
+a. Kosong
+b. Penuh
+c. Bisa diisi
+d. Ada isinya
+e. Hanya berisi 10 record
+f. Tempat yang kosong hanya ada 10 tempat
+
+=== Jawaban ===
+a. Kondisi: kosong
+   Ciri: COUNTER = 0
+   
+b. Kondisi: penuh
+   Ciri: COUNTER = n
+   
+c. Kondisi: bisa diisi
+   Ciri: COUNTER < n
+   
+d. Kondisi: ada isinya
+   Ciri: COUNTER > 0
+   
+e. Kondisi: hanya berisi 10 record
+   Ciri: COUNTER = 10
+   
+f. Kondisi: tempat yg kosong hanya ada 10 tempat
+   Ciri: (n – COUNTER) = 10

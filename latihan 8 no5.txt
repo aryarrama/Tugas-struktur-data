@@ -1,0 +1,24 @@
+=== Soal ===
+Tulis algoritma yang lengkap untuk mengisi antrian dari kanan record per record sebanyak 10 record selama antrian belum penuh kanan. Apabila antrian sudah penuh kanan, walaupun belum mengisi record, proses pengisian dihentikan.
+
+=== Jawaban ===
+HEAD:
+ mengisi antrian dari kanan record per record sebanyak 10 record selama antrian belum penuh kanan. Apabila antrian sudah penuh kanan, walaupun belum mengisi record, proses pengisian dihentikan
+DEKLARASI:
+ Q : array[1..n]
+ R : integer
+ x : record
+ i : integer
+DESKRIPSI:
+ i <-- 1
+ while (i <= 10) and (R < n - 1) do
+    input(x)
+    R <-- R + 1
+    Q[R] <-- x
+    i <-- i + 1
+ endwhile
+
+ if (R = n - 1) then
+    write("Antrian penuh kanan, pengisian dihentikan.")
+ else
+    else("Pengisian selesai, jumlah record yang dimasukkan =", i - 1)

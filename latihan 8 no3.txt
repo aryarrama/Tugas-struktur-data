@@ -1,0 +1,17 @@
+=== Soal ===
+Tulis algoritma yang lengkap untuk mengisi antrian dari kanan record per record sampai antrian penuh kanan, atau tidak bisa diisi lagi dari kanan
+
+=== Jawaban ===
+HEAD:
+ Mengisi antrian dari kanan record per record sampai antrian penuh kanan.
+DEKLARASI:
+ Q : array[1..n]
+ R : integer
+ x : record
+DESKRIPSI:
+ while (R < n - 1) do
+    input(x)
+    R <-- R + 1
+    Q[R] <-- x
+ endwhile
+ write("Antrian kanan penuh, tidak bisa diisi lagi.")

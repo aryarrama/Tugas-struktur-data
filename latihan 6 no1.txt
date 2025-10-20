@@ -1,0 +1,23 @@
+=== Soal ===
+Tulis algoritma yang lengkap untuk mengisi antrian record per record sebanyak 10 record selama antrian belum penuh. Apabila antrian penuh, walaupun belum mengisi 10 record, proses pengisian dihentikan.
+
+=== Jawab ===
+HEAD:
+Mengisi antrian record per record sebanyak 10 record, selama antrian belum penuh
+DEKLARASI:
+    Queue : array [1..MAX] of record
+    i : integer
+    MAX : integer <-- 10
+    Full : boolean
+DESKRIPSI:
+    Full <-- false  
+    i <-- 1  
+    while (i <= 10) and (Full = false) do if (Queue belum penuh) then 
+        read(record)  
+        enqueue(record)  
+        i <-- i + 1  
+    else  
+        Full <-- true  
+        write("Antrian penuh, proses dihentikan")  
+    endif  
+endwhile

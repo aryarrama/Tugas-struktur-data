@@ -1,0 +1,19 @@
+=== Soal ===
+Sebutkan ciri bahwa double ended queue pada:
+a. Kosong tidak ada isinya
+b. Penuh kanan, tak bisa diisi dari kanan
+c. Penuh kiri, tidak bisa diisi dari kiri
+d. Penuh total, tidak bisa diisi dari kiri maupun dari kanan
+e. Hanya diisi 10 pengantri
+
+=== Jawaban ===
+a. kondisi: Kosong
+   ciri: L = R + 1
+b. kondisi: penuh kanan
+   ciri: R = n -1
+c. kondisi: penuh kiri
+   ciri: L = 0 
+d. kondisi: penuh total tidak bisa di kiri maupun di kanan
+   ciri: L = 0 dan R = n -1
+e. kondisi: diisi 10 pengantri
+   ciri: Counter = 10 atau (R - L + 1) = 10

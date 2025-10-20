@@ -1,0 +1,47 @@
+=== Jawaban ===
+a. Sebutkan nama dan isi tiap-tiap pointer
+Jawab;
+• P	1000,	INFO = 1
+• Q	800,	INFO = 4
+• R	1400,	INFO = 5
+• S	1100,	INFO = 7
+
+b. Sebutkan pointer-pointer yang bernilai sama
+jawab: semuanya berbeda, jadi tidak ada pointer yang nilainya sama
+
+c. Sebutkan TRUE atau FALSE kondisi pada intruksi tiap pernyataan 
+dibawah ini : 
+i. if(P->LINK==R)
+   P->LINK = 800
+   R = 1400
+   800 != 1400 --> FALSE (!= artinya tidak sama dengan)
+   
+ii. if(Q->LINK==R->LINK) 
+    Q->LINK = 1400
+    R->LINK = 1100
+    1400 != 1100 --> FALSE
+    
+iii. if(Q->LINK->LINK==S->LINK)
+    Q->LINK = 1400
+    Q->LINK->LINK = 1100
+    S->LINK = NULL
+    NULL --> FALSE
+    
+iv. if(Q==R)
+    800 != 1400 --> FALSE
+    
+v. if(Q-LINK==R) 
+    Q->LINK = 1400
+    R = 1400
+    1400 = 1400 --> TRUE
+    
+vi. if(R->LINK->INFO==5) 
+    R->LINK = 1100
+    1100->INFO = 7
+    7 != 5 --> FALSE
+    
+vii. if(Q->INFO==4)
+    Q->INFO = 4
+    4 = 4 --> TRUE
+  
+

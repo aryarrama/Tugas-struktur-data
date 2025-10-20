@@ -1,0 +1,27 @@
+=== Jawaban ===
+a. Simpul no (1)
+  Q <-- FIRST
+  
+b. Simpul 7
+  Q <-- FIRST
+  for i = 1 to 6:
+     Q <-- Q->LINK
+     endwhile
+     
+c. simpul akhir
+  Q <-- FIRST
+   while (Q->LINK != NULL) do
+    Q <-- Q->LINK
+    endwhile
+    
+d. simpul dengan nilai Info=50
+  Q <-- FIRST
+   while (Q->INFO != 50) do
+     Q <-- Q->LINK
+    endwhile
+    
+e. Simpul satu simpul di depan simpul dengan INFO = 50
+  Q <-- FIRST
+   while (Q->LINK->INFO != 50) do
+     Q <-- Q->LINK
+  endwhile

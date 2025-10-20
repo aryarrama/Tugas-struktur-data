@@ -1,0 +1,15 @@
+=== Soal ===
+Tulis untuk menghitung dan mencetak jumlah tempat(elemen) yang ada isinya bila diketahui nilai F dan R tanpa mengetahui nilai Counter
+
+=== Jawaban ===
+HEAD: 
+menghitung dan mencetak jumlah tempat(elemen) yang ada isinya bila diketahui nilai F dan R tanpa mengetahui nilai Counter
+DEKLARASI:
+F, R, n, Jumlah: integer
+DESKRIPSI:
+ if (F = -1) then
+    Jumlah <-- 0
+ else
+    Jumlah <-- ((R - F + n) mod n) + 1
+ endif
+ write("Jumlah elemen yang ada isinya = ", Jumlah)

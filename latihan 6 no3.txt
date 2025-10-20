@@ -1,0 +1,60 @@
+=== Soal ===
+Tulis algoritma dasar untuk:
+a. Inisialisasi 
+b. Insert sebuah record
+c. Delete sebuah record
+d. Reset
+
+=== Jawaban ===
+a. Inisialisasi
+HEAD:
+ Menginisialisasi antrian kosong
+DEKLARASI:
+ Front, Rear : integer
+DESKRIPSI:
+ Front <-- 0
+ Rear <-- 0
+   
+b. Insert sebuah record 
+HEAD:
+Enqueue
+DEKLARASI:
+ Record: data
+ Front, Rear: integer
+DESKRIPSI:
+ if (Rear < MAX) then  
+    Rear <-- Rear + 1  
+    Queue[Rear] <-- Record  
+    if (Front = 0) then  
+        Front <-- 1  
+    endif  
+ else  
+    write("Antrian penuh")  
+ endif
+ 
+c. Delete sebuah Record
+HEAD:
+ Dequeue
+DEKLARASI:
+ Front, Rear: integer
+DESKRIPSI:
+ if (Front = 0) then  
+    write("Antrian kosong")  
+ else  
+    record <-- Queue[Front]  
+    Front <-- Front + 1  
+    if (Front > Rear) then  
+        Front <-- 0  
+        Rear <-- 0  
+    endif  
+  endif
+ 
+d. Reset
+HEAD:
+ Mereset antrian ke kondisi kosong
+DEKLARASI:
+ Front, Rear: integer
+DESKRIPSI:
+ Front <-- 0  
+ Rear <-- 0  
+ write("Antrian telah direset")
