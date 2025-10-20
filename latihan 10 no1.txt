@@ -1,0 +1,11 @@
+1. Pengertian Konsep LIFO (Last In First Out)
+
+LIFO (Last In First Out) adalah konsep tumpukan (stack) di mana elemen yang terakhir dimasukkan akan menjadi elemen pertama yang dikeluarkan.
+Artinya, elemen yang baru masuk “menumpuk” di atas elemen sebelumnya, dan ketika diambil, yang paling atas (terakhir dimasukkan) akan keluar duluan.
+
+Contoh sederhana:
+Bayangkan tumpukan piring di dapur. Piring terakhir yang kamu taruh di atas tumpukan akan menjadi piring pertama yang diambil saat ingin digunakan.
+
+Ciri khas LIFO:
+Operasi PUSH -> menambah elemen di atas stack
+Operasi POP -> menghapus elemen dari atas stack

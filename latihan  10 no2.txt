@@ -1,0 +1,11 @@
+2. Pengertian Konsep FIFO (First In First Out)
+
+FIFO (First In First Out) adalah konsep antrian (queue) di mana elemen yang pertama kali dimasukkan akan menjadi elemen pertama yang dikeluarkan.
+Artinya, urutannya sama seperti datangnya: yang datang dulu akan dilayani atau keluar lebih dulu.
+
+Contoh sederhana:
+Antrian di loket tiket. Orang yang pertama datang akan dilayani lebih dulu dibanding orang yang datang belakangan.
+
+Ciri khas FIFO:
+Operasi ENQUEUE -> menambah elemen di belakang antrian
+Operasi DEQUEUE -> menghapus elemen dari depan antrian

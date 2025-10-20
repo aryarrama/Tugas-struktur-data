@@ -1,0 +1,14 @@
+3. Penerapan Aplikasi STACK dengan Array
+
+Stack dapat diimplementasikan menggunakan array dengan cara memanfaatkan variabel TOP sebagai penunjuk posisi elemen teratas.
+
+Konsepnya:
+1. Saat PUSH, nilai TOP dinaikkan (TOP++) dan elemen baru disimpan pada posisi array[TOP].
+2. Saat POP, nilai TOP diturunkan (TOP--) untuk menghapus elemen teratas.
+3. Stack dianggap kosong jika TOP = -1.
+4. Stack dianggap penuh jika TOP = MAX - 1 (ukuran array sudah habis).
+
+Contoh penerapan di dunia nyata:
+Fitur Undo/Redo di aplikasi (misalnya di Word atau Photoshop)
+Navigasi halaman web (Back dan Forward)
+Pemanggilan fungsi rekursif dalam program
