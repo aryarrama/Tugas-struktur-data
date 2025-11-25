@@ -1,0 +1,14 @@
+a. Sebutkan nama-nama pointer sesuai dengan nomornya 
+(1) Q : pointer ke node pertama (head list)
+(2) LEFT(7) : pointer bagian kiri node pertama (menunjuk ke NULL)
+(3) LEFT(7) : juga bisa dianggap NULL (karena tidak ada node sebelum node 7)
+(4) RIGHT(7) : pointer kanan node pertama, menunjuk ke node berikutnya (node (8))
+(5) LEFT(8) : pointer kiri node kedua, menunjuk ke node sebelumnya (node (7))⃣
+(6) RIGHT(8) : pointer kanan node kedua, menunjuk ke NULL (karena tidak ada node setelahnya)
+(7) NULL : akhir list (penanda akhir)
+
+b. Sebutkan pointer yang nilainya sama
+- Q = alamat node (7)
+- RIGHT(7) = alamat node (8)
+- LEFT(8) = alamat node (7)
+- LEFT(7) = RIGHT(8) = NULL
