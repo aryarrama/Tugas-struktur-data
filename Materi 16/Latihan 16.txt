@@ -1,0 +1,76 @@
+Nama: Arya Ramadhani
+NIM: 241011401623
+
+1.	Tunjukkan dengan tabel, Ditemukan pada iterasi ke berapa ? nilai yang diinput dari luar (missal N) ditemukan atau tidak ditemukan untuk data dan algoritma yang dicontohkan sebelumnya, bila data yang diinput yaitu: a. N = 17 b. N = 22
+
+0	1	2	3	4	5	6	7	8	9
+5	7	12	15	17	19	22	25	27	32
+
+Jawab:
+Binary Search:
+· low = 0, high = 9
+· Cari tengah = (low + high) div 2
+· Bandingkan nilai tengah dengan N, sesuaikan low/high
+
+a)	N = 17
+Iterasi 1:
+low = 0, high = 9
+mid = (0 + 9) div 2 = 4
+Nilai[4] = 17 → ditemukan pada iterasi ke-1.
+
+Jawaban (a): Ditemukan pada iterasi ke-1.
+
+b)	N = 22
+Iterasi 1:
+low = 0, high = 9
+mid = 4 → Nilai[4] = 17
+22 > 17 → low = mid + 1 = 5, high = 9
+Iterasi 2:
+low = 5, high = 9
+mid = (5 + 9) div 2 = 7
+Nilai[7] = 25
+22 < 25 → high = mid - 1 = 6, low = 5
+Iterasi 3:
+low = 5, high = 6
+mid = (5 + 6) div 2 = 5
+Nilai[5] = 19
+22 > 19 → low = mid + 1 = 6, high = 6
+Iterasi 4:
+low = 6, high = 6
+mid = 6
+Nilai[6] = 22 → ditemukan.
+
+Jawaban (b): Ditemukan pada iterasi ke-4.
+
+2.	Susunlah algoritma Binary Search dengan mengambil contoh data seperti pada soal no.1
+Jawaban:
+ALGORITMA BinarySearch
+DEKLARASI
+  data: array[0..9] of integer = (5, 7, 12, 15, 17, 19, 22, 25, 27, 32)
+  N, low, high, mid, idx: integer
+  found: boolean
+
+DESKRIPSI
+  input(N)
+  low ← 0
+  high ← 9
+  found ← false
+  idx ← -1
+
+  while (low <= high) and (not found) do
+    mid ← (low + high) div 2
+    if data[mid] = N then
+      found ← true
+      idx ← mid
+    else if N < data[mid] then
+      high ← mid - 1
+    else
+      low ← mid + 1
+    endif
+  endwhile
+
+  if found then
+    output("N ditemukan pada indeks ke-", idx)
+  else
+    output("N tidak ditemukan")
+  endif
